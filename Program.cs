@@ -1,12 +1,14 @@
-﻿System.Console.Write("Who would you like to say hello to? ");
+﻿using System;
 
-string name = System.Console.ReadLine();
+Console.Write("Who would you like to say hello to? ");
+
+string name = Console.ReadLine();
 
 if (string.IsNullOrWhiteSpace(name))
 {
-    System.Console.WriteLine("Fine, don't say 'hello'!");
+    Console.WriteLine("Fine, don't say 'hello'!");
 }
 else
 {
-    System.Console.WriteLine($"Hello, {name}!");
+    Console.WriteLine($"Hello, {name}!");
 }
